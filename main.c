@@ -9,8 +9,7 @@
 
 int main() 
 {
-    system("chcp 65001"); 
-    system("cls"); // 인코딩 변경 메시지 삭제 
+    system("chcp 65001 > nul"); 
 	// 1. 변수 선언 (5개 이상, 자료형 혼합)
     char item;          // 상품 이름의 첫 글자
     int price_usd;         // 상품 가격 (달러)
