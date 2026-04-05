@@ -52,10 +52,9 @@
 
 
 ### **📁 증빙 자료:**
-  * [1차_AI협업캡처.pdf 첨부 완료]
   * [AI협업증명(1차과제).pdf](https://github.com/MJU-C-2026-1/c-homework-2601-wlsxo4836-bit/blob/3457ef73b7a035992f5b498c0e576ba2d3eac83b/AI%ED%98%91%EC%97%85%EC%A6%9D%EB%AA%85(1%EC%B0%A8%EA%B3%BC%EC%A0%9C).pdf)
   * [AI협업증명2(1차과제).pdf](https://github.com/MJU-C-2026-1/c-homework-2601-wlsxo4836-bit/blob/cc1798df72af478f30f5969ba6362a64f97993dc/AI%ED%98%91%EC%97%85%EC%A6%9D%EB%AA%852(1%EC%B0%A8%EA%B3%BC%EC%A0%9C).pdf)
-  * [1차과제_실행결과.jpg]
+  * [1차과제_실행결과.jpg](https://github.com/MJU-C-2026-1/c-homework-2601-wlsxo4836-bit/blob/753895fe075745037b1a0f1dcfd531d8fc640343/1%EC%B0%A8%EA%B3%BC%EC%A0%9C%20%EC%8B%A4%ED%96%89%EA%B2%B0%EA%B3%BC.jpg)
 
 <br>
 
