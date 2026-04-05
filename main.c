@@ -23,8 +23,8 @@ int main()
     printf("--- 해외 직구 비용 계산기 ---\n");
     
     printf("구매할 상품의 첫 글자를 입력하세요: ");
-    scanf(" %c", &item); // %c 앞에 공백을 두어 버퍼 오류 방지
-
+    scanf(" %c", &item); 
+	
     printf("상품 가격($)을 입력하세요: ");
     scanf("%d", &price_usd);
 
