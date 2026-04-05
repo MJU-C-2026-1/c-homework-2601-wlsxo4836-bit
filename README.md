@@ -48,8 +48,6 @@
      * **해결:** AI에게 질문하여 stdlib 전처리기의 여러 가지 코드를 입력받음
   2. **문제 2:** 실행 화면에 나오는 Active code page: 65001 메시지가 지저분하여 지우려고 함
      * **해결:** AI 검색을 통해 system 함수 안에 들어가는 명령어 뒤에 **> nul**을 붙여 메시지가 뜨지 않게 해결함
-  3. **문제 3:**
-
 
 ### **📁 증빙 자료:**
   * [AI협업증명(1차과제).pdf](https://github.com/MJU-C-2026-1/c-homework-2601-wlsxo4836-bit/blob/3457ef73b7a035992f5b498c0e576ba2d3eac83b/AI%ED%98%91%EC%97%85%EC%A6%9D%EB%AA%85(1%EC%B0%A8%EA%B3%BC%EC%A0%9C).pdf)
