@@ -74,7 +74,8 @@
 ### **📁 증빙 자료:**
   * [2차 과제 실행결과 1.png](https://github.com/MJU-C-2026-1/c-homework-2601-wlsxo4836-bit/blob/main/2%EC%B0%A8%20%EA%B3%BC%EC%A0%9C%20%EC%8B%A4%ED%96%89%EA%B2%B0%EA%B3%BC%201.png)
   * [2차 과제 실행결과 2.png](https://github.com/MJU-C-2026-1/c-homework-2601-wlsxo4836-bit/blob/33b9d8562f0f0b55257394ef8371515e7803188c/2%EC%B0%A8%20%EA%B3%BC%EC%A0%9C%20%EC%8B%A4%ED%96%89%EA%B2%B0%EA%B3%BC%202.png)
-  * [2차과제_실행결과.jpg](https://github.com/MJU-C-2026-1/c-homework-2601-wlsxo4836-bit/blob/33b9d8562f0f0b55257394ef8371515e7803188c/AI%ED%98%91%EC%97%85%EC%A6%9D%EB%AA%85(2%EC%B0%A8%20%EA%B3%BC%EC%A0%9C).pdf)
+  * [AI협업증명(2차과제).pdf](https://github.com/MJU-C-2026-1/c-homework-2601-wlsxo4836-bit/blob/33b9d8562f0f0b55257394ef8371515e7803188c/AI%ED%98%91%EC%97%85%EC%A6%9D%EB%AA%85(2%EC%B0%A8%20%EA%B3%BC%EC%A0%9C).pdf)
+  * [AI협업증명2(2차과제).pdf](https://github.com/MJU-C-2026-1/c-homework-2601-wlsxo4836-bit/blob/615a58ec58aed387b98afc053d6b5bdb420c2a36/AI%ED%98%91%EC%97%85%EC%A6%9D%EB%AA%852(2%EC%B0%A8%EA%B3%BC%EC%A0%9C).pdf)
 <br>
 
 ## 🟨 [3차 과제: V3.0] 무한 루프와 메뉴 시스템 (반복문) - 향후 작성 예정
