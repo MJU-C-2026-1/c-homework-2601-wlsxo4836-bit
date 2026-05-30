@@ -1,0 +1,147 @@
+/*
+  작성자:60231919 김진태
+  파일명:main.c
+  하는일:환전 및 해외 직구 관리 프로그램
+*/
+
+#include<stdio.h>
+#include<stdlib.h>
+
+double g_total_accumulated_krw = 0; //프로그램 전체에서 누적할 총 결제 금액
+
+//함수 선언
+double calc_tariff(int price_usd, double exchange_rate);
+double calc_final_krw(int price_usd, double exchange_rate, double tariff);
+void print_report(char item, int price_usd, double exchange_rate, double tariff, double final_krw);
+
+int main()
+{
+  system("chcp 65001 > nul");
+  //main 함수 내부 지역 변수
+  char item; // 상품 이름의 첫 글자
+  int price_usd = 0; // 상품 가격(달러)
+  double exchange_rate = 0.0; //현재 환율(1달러당 원화)
+  double tariff = 0.0; //관세(150$ 이상 금액, 10%)
+  double final_krw = 0.0; //최종 결제 금액(원)
+
+  int menu_choice;
+  
+  //while(1) 무한 루프 및 메인 메뉴 구성
+  while(1)
+  {
+    printf("\n스마트 해외 직구 관리 프로그램 V3.0\n");
+    printf("\n1. 직구 상품 정보 입력\n");
+    printf("2. 관세 판정 및 결과 조회\n");
+    printf("3. 누적 총 결제 금액 확인\n");
+    printf("4. 프로그램 종료\n");
+    printf("\n원하는 메뉴 번호를 선택하세요: ");
+    scanf(" %d", &menu_choice);
+
+    if(menu_choice == 1)
+    {
+      printf("\n---해외 직구 비용 입력 -- \n");
+      printf("구매할 상품의 첫 글자를 입력하세요: ");
+      scanf(" %c", &item);
+
+      printf("상품 가격($)을 입력하세요(150$ 이상 관세 추가): ");
+      scanf(" %d", &price_usd);
+     
+      printf("현재 환율(1$당 원화)을 입력하세요: ");
+      scanf(" %lf", &exchange_rate);
+
+      //관세 계산
+      tariff = calc_tariff(price_usd, exchange_rate);
+
+      //최종 금액 계산 및 전역 변수 누적
+      final_krw = calc_final_krw(price_usd, exchange_rate, tariff);
+
+      printf("\n => 정보 입력이 완료되었습니다. 2번 메뉴에서 분석을 진행하세요. \n");
+    }
+    else if (menu_choice == 2)
+    {
+      if (price_usd == 0)
+      {
+         printf("\n[오류] 먼저 1번 메뉴에서 데이터를 입력해주세요.\n");
+      }
+
+      else
+      {
+          //결과 출력
+          print_report(item, price_usd, exchange_rate, tariff, final_krw);
+      }
+    }
+    else if (menu_choice == 3)
+    {
+      //전역 변수 값 출력
+      printf("\n현재까지 장바구니 누적 총 금액: %.0f 원\n", g_total_accumulated_krw);
+    }
+    else if (menu_choice == 4)
+    {
+      printf("\n프로그램을 종료합니다. 이용해 주셔서 감사합니다.");
+      break;
+    }
+    else
+    {
+      printf("\n잘못된 번호입니다. 1~4번 사이의 숫자를 입력하세요.\n");
+      //입력 버퍼 지우기
+      while (getchar() != '\n');
+    }
+  }
+  return 0;
+}
+
+//1. 관세 판정 및 계산 함수
+double calc_tariff(int price_usd, double exchange_rate)
+{
+  double calculated_tariff = 0;
+  if (price_usd >= 150)
+  {
+  calculated_tariff = (price_usd * exchange_rate) * 0.1;
+  }
+
+  else
+  {
+    calculated_tariff = 0;
+  }
+  return  calculated_tariff;
+}
+//2. 최종 결제 금액 계산 및 전역 변수 업데이트 함수
+double calc_final_krw(int price_usd, double exchange_rate, double tariff)
+{
+  double fee_rate = 0.02;  //해외 결제 수수료(2%)
+  int shipping_fee = 15000;  // 국제 배송비 (원)
+  double calculated_final = 0;
+
+  calculated_final = (price_usd * exchange_rate) * (1 + fee_rate) + shipping_fee + tariff;
+
+  g_total_accumulated_krw += calculated_final;
+  
+  return calculated_final;
+}
+
+//3. 출력 전용 함수
+void print_report(char item, int price_usd, double exchange_rate, double tariff, double final_krw)
+{
+  double fee_rate = 0.02;
+  
+  printf("\n--- 계산 결과 ---\n");
+  printf("상품 기호: [%c]\n", item);
+  printf("상품 가격: %d 달러\n", price_usd);
+  printf("적용 환율: %.2f 원\n", exchange_rate);
+  printf("수수료율: %.1f%%\n", fee_rate * 100);
+
+  if (price_usd >= 150)
+  {
+    printf("관세 10%%(%.0lf원) 적용\n", tariff);
+  }
+  else
+  {
+    printf("관세 면제 대상입니다.\n");
+  }
+  printf("최종 결제 예정 금액: %.0f 원 (배송비 15000원 포함)\n", final_krw);
+}
+
+
+
+
+
