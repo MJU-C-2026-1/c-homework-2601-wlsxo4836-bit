@@ -92,8 +92,9 @@
      * **해결:** 문자는 입력 버퍼를 남기게 되어 무한루프되며 이 버퍼를 지워주어야 다시 제대로 실행됨을 알아내고 while (getchar() != '\n'); 코드를 이용하여 해결함
      
 ### **📁 증빙 자료:**
-  * [3차_AI협업캡처.pdf 첨부 완료] (첨부 후 링크)
-  * [3차과제_실행결과.jpg]
+  * [3차_AI협업캡처.pdf] (https://github.com/MJU-C-2026-1/c-homework-2601-wlsxo4836-bit/blob/7bcbd2e7b0a89a5b3d557493cb960f6c8e4424b7/AI%ED%98%91%EC%97%85%EC%A6%9D%EB%AA%85(3%EC%B0%A8%EA%B3%BC%EC%A0%9C).pdf)
+  * [3차과제_실행결과1.jpg](https://github.com/MJU-C-2026-1/c-homework-2601-wlsxo4836-bit/blob/7bcbd2e7b0a89a5b3d557493cb960f6c8e4424b7/3%EC%B0%A8%20%EA%B3%BC%EC%A0%9C%20%EC%8B%A4%ED%96%89%EA%B2%B0%EA%B3%BC%201.png)
+  * [3차과제_실행결과2.jpg](https://github.com/MJU-C-2026-1/c-homework-2601-wlsxo4836-bit/blob/7bcbd2e7b0a89a5b3d557493cb960f6c8e4424b7/3%EC%B0%A8%20%EA%B3%BC%EC%A0%9C%20%EC%8B%A4%ED%96%89%EA%B2%B0%EA%B3%BC%202.png)
 <br>
 
 ### 🟥 [4차 과제: V4.0] 모듈화 및 데이터 확장 (배열과 함수) - 🌟최종 완성 -- 향후 작성 예정
