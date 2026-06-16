@@ -109,6 +109,7 @@
     없음
      
 ### **📁 증빙 자료:**
-  * [4차_AI협업캡처.pdf 첨부 완료] (첨부 후 링크)
-  * [4차과제_실행결과.jpg]
+  * [4차과제_실행결과1.jpg](https://github.com/MJU-C-2026-1/c-homework-2601-wlsxo4836-bit/blob/63dd158b4b57e8ba396d24ed1f00b727bb5b79a2/4%EC%B0%A8%EA%B3%BC%EC%A0%9C%20%EC%8B%A4%ED%96%89%EA%B2%B0%EA%B3%BC%201.png)
+  * [4차과제 실행결과2.jpg](https://github.com/MJU-C-2026-1/c-homework-2601-wlsxo4836-bit/blob/63dd158b4b57e8ba396d24ed1f00b727bb5b79a2/4%EC%B0%A8%EA%B3%BC%EC%A0%9C%20%EC%8B%A4%ED%96%89%EA%B2%B0%EA%B3%BC%202.png)
+  * 
 <br>
